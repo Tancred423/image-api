@@ -5,5 +5,5 @@ services:
       - .env
     image: ghcr.io/tancred423/image-api:latest
     ports:
-      - "${PORT}:4001"
+      - "${PORT}:4000"
     restart: unless-stopped

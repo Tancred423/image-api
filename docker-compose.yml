@@ -10,7 +10,7 @@ services:
       - ./deno.json:/app/deno.json
       - ./deno.lock:/app/deno.lock
     ports:
-      - "${PORT}:4001"
+      - "${PORT}:4000"
     env_file:
       - .env
     restart: unless-stopped

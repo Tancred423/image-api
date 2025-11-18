@@ -7,7 +7,7 @@ COPY src ./src
 
 RUN deno cache src/app.ts
 
-EXPOSE 4001
+EXPOSE 4000
 
 CMD ["deno", "task", "start"]
 
