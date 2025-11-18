@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: image-api
+    env_file:
+      - .env
+    image: ghcr.io/tancred423/image-api:latest
+    ports:
+      - "${PORT}:4001"
+    restart: unless-stopped

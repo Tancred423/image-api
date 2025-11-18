@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: tail -f /dev/null
+    container_name: image-api
+    volumes:
+      - ./src:/app/src
+      - ./deno.json:/app/deno.json
+      - ./deno.lock:/app/deno.lock
+    ports:
+      - "${PORT}:4001"
+    env_file:
+      - .env
+    restart: unless-stopped

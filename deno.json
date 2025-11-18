@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["deno.window"]
+  },
+  "fmt": {
+    "lineWidth": 120
+  },
+  "imports": {
+    "hono": "https://deno.land/x/hono@v3.11.7/mod.ts",
+    "hono/middleware": "https://deno.land/x/hono@v3.11.7/middleware.ts",
+    "std/dotenv": "https://deno.land/std@0.208.0/dotenv/mod.ts",
+    "std/log": "https://deno.land/std@0.208.0/log/mod.ts"
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-env --watch src/app.ts",
+    "start": "deno run --allow-net --allow-read --allow-env src/app.ts"
+  }
+}
