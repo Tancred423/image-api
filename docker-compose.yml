@@ -19,4 +19,5 @@ services:
 
 networks:
   servant-network:
-    external: true
+    name: servant-network
+    driver: bridge
